@@ -7,9 +7,16 @@ const LocationItem = ({data})=>{
     console.log(visited)
     return (
         <div className="location-item" onClick={()=>{
-            setVisited(true);
+            //  check if it has not been visited if yes then set to true 
+            setVisited((currentValue)=>{ 
+               if (currentValue === true) {
+                return false} 
+         else{return true}
+            })
+         ;
         }}>
             <h2>{data}</h2>
+        {visited? <h3>true</h3> :<h3>false</h3> }
         </div>
     )
 }

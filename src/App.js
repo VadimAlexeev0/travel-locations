@@ -1,5 +1,5 @@
-import './App.css';
-import LocationGrid from "./LocationGrid"
+import "./App.css";
+import LocationGrid from "./LocationGrid";
 
 function App() {
   return (
